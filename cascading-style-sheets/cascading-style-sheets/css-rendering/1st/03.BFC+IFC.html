@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!-- 태그의 구조가 렌더링과 일치하는 것이 아니다 -->
+<div style="width:500px">
+  HELLO
+  <span>
+    WORLD
+    <div style="background:red;">&nbsp;</div>
+  </span>
+  !!
+</div>
+<hr>
+<div style="width:500px">
+  **
+  <span>
+    HELLO
+    <span>WORLD
+      <div style="background:red">&nbsp;</div>
+    </span>
+    !!
+    <div style="background:blue">&nbsp;</div>
+  </span>
+  **
+</div>
+</body>
+</html>

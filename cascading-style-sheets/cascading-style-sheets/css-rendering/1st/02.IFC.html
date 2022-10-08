@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!-- 공백 문자열이 없는 문자열을 하나의 IFC 섹션으로 취급한다 -->
+<div style="width:200px;background:red">
+  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
+<hr>
+<!-- 영역에 맞춰서 아래로 내리고 싶다면 공백문자열을 삽입(word-break)해야한다. -->
+<div style="width:200px;background:red">
+  aaaaaaaaaaaaaaaaaaaaaaaaa
+  aaaaaaaaaaaaaaaaaaaaaaaaa
+  aaaaaaaaaaaaaaaaa
+</div>
+<hr>
+<!-- 뚫고 나오는 것이 싫다면 word-break 속성을 주어서 공백 문자가 없는 문자열도
+각각 inline 요소로 처리하게 되고 속도가 굉장히 느려진다. -->
+<div style="width:200px;background:red;word-break: break-all">
+  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
+</body>
+</html>
